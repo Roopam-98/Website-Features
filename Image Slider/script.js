@@ -1,5 +1,6 @@
-let imageArray = ['./images/bee-eater-trying-eat-insect-another-one-tree-branch.jpg','./images/red-tulips-white-background.jpg',
-    './images/seagulls-birds-fly-blue-sky.jpg','./images/pexels-nietjuh-776656.jpg'
+let imageArray = ['./images/bee-eater-with-multicolored-feathers-open-wings-sitting-branch-tree.jpg','./images/nature-flowers-petals-1034464.jpg',
+    './images/pexels-brunocervera-3298934.jpg','./images/pexels-cottonbro-3661193.jpg','./images/pexels-fotios-photos-1314133.jpg',
+    './images/pexels-tima-miroshnichenko-5710593.jpg'
 ];
 
 function setImage(i){
