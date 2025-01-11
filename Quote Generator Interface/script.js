@@ -74,6 +74,17 @@ function submit(){
     clearData();
 }
 
+function submitEvent(){
+    document.querySelector('.submit')?.addEventListener('click',()=>{submit();
+        document.querySelector('.snackbar').classList.add('snackbar-show');
+        setTimeout(()=>{
+            document.querySelector('.snackbar').classList.remove('snackbar-show');
+        },3000);
+    });
+}
+
+submitEvent();
+
 const previewButton = document.querySelector('.preview');
 previewButton?.addEventListener('click',()=>{
     const previewQuote = document.querySelector('.quote-generator');
@@ -86,20 +97,12 @@ previewButton?.addEventListener('click',()=>{
         <div class="quote-preview-font"><span class="quote-style">&ldquo;</span>${data.quote}<span class="quote-style">&rdquo;</span></div>
         <div class="author-preview ">- ${data.author}</div>
         <div><a href="index.html"><button class="preview">Discard</button></a>
-        <button class="submit">Submit</button></div>`;
+        <button class="submit">Submit</button></div>
+        <p class="snackbar">Your form has been submitted successfully!</p>`;
     submitEvent();
 
 });
 
-function submitEvent(){
-    document.querySelector('.submit')?.addEventListener('click',()=>{submit();
-        document.querySelector('.snackbar').classList.add('snackbar-show');
-        setTimeout(()=>{
-            document.querySelector('.snackbar').classList.remove('snackbar-show');
-        },3000);
-    });
-}
 
-submitEvent();
 
 
